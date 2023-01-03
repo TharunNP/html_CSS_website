@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title  title="Title">Tharun Natarajan Prabhu</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="w3-container">
+        <div class="w3-bar w3-section w3-black w3-card-4">
+            <a href="#bio" class="w3-bar-item w3-button w3-black w3-hover-white w3-padding-16">Home</a>
+            <a href="#experince" class="w3-bar-item w3-button w3-black w3-hover-white w3-padding-16">Experience</a>
+            <a href="#Education" class="w3-bar-item w3-button w3-black w3-hover-white w3-padding-16">Education</a>
+        </div>
+    </div>
+
+    <h1 title="Name" style="color:black;background-color:white; font-family: 'Baskerville Old Face'; font-size:40px; text-align:center;">Tharun Natarajan Prabhu</h1>
+
+
+
+    <div class="w3-panel w3-black" style="margin:20px; height:700px">
+
+        <h2 id="bio" style="font-size:30px; font-family:verdana; color:whitesmoke;  margin: 20px; background-color:black"> Introduction</h2>
+        <img src="C:\Users\nptha\OneDrive\Pictures\pic1.jpg" alt="Pic of me" style="width: 349.8px;
+        height: 524.7px;
+        float: right;
+        margin-right: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ">
+
+        <style>
+            span.test2 {
+                writing-mode: vertical-lr;
+            }
+        </style>
+
+        <p style=" margin-left:200px; margin-top:200px; font-size:20px;">
+            Hello!<br /> <br /> My name is Tharun and I am a computer science <br /> student at the University of Houston. Want to know more?<br />
+            <span class="test2" style="font-family:Rage; font-size: 30px;">Keep scrolling!</span>
+        </p>
+
+    </div>
+
+
+
+    <div style="background-color:white; padding:30px;">
+
+        <h3 id="experince" style="font-size:30px; font-family:verdana; color:black; margin: 20px;"> Experience</h3>
+
+    </div>
+
+
+    <div class="w3-bar w3-section w3-black w3-card-4 " style="margin:20px;">
+        <button class="w3-bar-item w3-button" onclick="openCity('Oracle Application Technical Specialist')"> Oracle Application Technical Specialist</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Google cloud platform')"> Google cloud platform certification</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('RPA')">Robotic Process Automation</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Ethical Hackers Club')"> Ethical Hackers Club</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Women in Cybersecurity Club')"> Women in Cybersecurity Club</button>
+    </div>
+
+    <div id="Google cloud platform" class="w3-container w3-display-container city" style="color:black; font-size:20px;">
+        <span onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-large w3-display-topright"> &times;</span>
+
+        <p>
+            • Utilized Google cloud platform to learn about fundamental infrastructure<br />
+            • Learned about google console using google shell and deployed solution elements<br />
+            • Obtained certificate for infrastructure and foundation through Coursera<br />
+        </p>
+    </div>
+
+    <div id="Ethical Hackers Club" class="w3-container w3-display-container city" style="display:none; color:black; font-size:20px;">
+        <span onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-large w3-display-topright"> &times;</span>
+
+        <p>
+            • Utilized software currently used in field by professionals such as Wireshark, Nmap and more.<br />
+            • Competed in multiple competitive events such as hackathons to gain relevant experience<br />
+            • Directed virtual meets with experienced professionals for further development<br />
+            • Organized bi-weekly sessions demonstrating uses of tools to nurture ideas with about 150 members<br />
+        </p>
+    </div>
+
+    <div id="Women in Cybersecurity Club" class="w3-container w3-display-container city" style="display:none; color:black; font-size:20px;">
+        <span onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-large w3-display-topright"> &times;</span>
+
+        <p>
+            • Orchestrated meetings among members as the treasurer to discuss various software/tools for cybersecurity<br />
+            • Competed in capture the flags to facilitate better understanding of concepts penetration testing<br />
+            • Arranged virtual meets with experienced professionals for exposure of real-time work experience<br />
+        </p>
+    </div>
+    <div id="Oracle Application Technical Specialist" class="w3-container w3-display-container city" style="display:none; color:black; font-size:20px;">
+        <span onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-large w3-display-topright"> &times;</span>
+
+        <p>
+            • Utilized Agile framework to automate missing invoices in UAT/QA environment<br />
+            • Implemented BOT structure saving $12,000/year in productivity<br />
+            • Collaborated in multiple sprints for ongoing projects like Fleet<br />
+        </p>
+    </div>
+    <div id="RPA" class="w3-container w3-display-container city" style="display:none; color:black; font-size:20px;">
+        <span onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-large w3-display-topright"> &times;</span>
+
+        <p>
+            • Utilized A360 to code BOTS to perform specialized repetitive tasks<br />
+            • Completed multiple modules for different platforms that RPA integrates into<br />
+            • Obtained Citizen BOT builder badge through Automation Anywhere University<br />
+        </p>
+    </div>
+
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            document.getElementById(cityName).style.display = "block";
+        }
+
+    </script>
+    <div style="background-color:white; padding:30px;">
+        <style>
+            #example1 {
+                background-image: url(https://uhcougars.com/images/2020/3/25/ZOOMBackground_71.jpg), url(https://uhcougars.com/images/2020/3/25/ZOOMBackground_71.jpg);
+                background-position: right top, left bottom;
+                background-repeat: no-repeat, repeat;
+                padding: 30px;
+            }
+        </style>
+
+        <div id="example1">
+            <h4 id="Education" style="font-size:30px; font-family:verdana; color:white; margin: 20px;">Education</h4>
+            <p style="color: white; font-size: 20px;">
+                University of Houston<br />  Major: B.S. Computer Science<br />  Minor: Mathematics.<br />
+                GPA: 3.4/4.0<br />
+                Relevant coursework: Data structures, Database systems, Intro to Data Science and Machine Learning
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+    <a title="LinkdIn" href="https://www.linkedin.com/in/tharun-natarajan-prabhu-70b245188/"><img src="\Users\nptha\OneDrive\Pictures\linkdin.png" width="70" height="70" style="display: block; margin-left: auto; margin-right: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); " /></a>
+    <a title="GitHub" href="https://github.com/TharunNP"><img src="\Users\nptha\OneDrive\Pictures\github.png" width="70" height="70" style="display: block; margin-left: auto; margin-right: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); " /></a>
+</body>
+</html>
